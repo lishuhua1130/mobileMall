@@ -9,6 +9,26 @@ export default [
                 path:'/home',
                 name:'home',
                 component:()=>import('@/views/home/Home.vue')
+            },
+            {
+                path:'/category',
+                name:'category',
+                component:()=>import('@/views/category/Category.vue')
+            },
+            {
+                path:'/eat',
+                name:'eat',
+                component:()=>import('@/views/eat/Eat.vue')
+            },
+            {
+                path:'/cart',
+                name:'cart',
+                component:()=>import('@/views/cart/Cart.vue')
+            },
+            {
+                path:'/mine',
+                name:'mine',
+                component:()=>import('@/views/mine/Mine.vue')
             }
         ]
     }

@@ -3,6 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// -- 引入UI控件
+import Vant from 'vant'
+import 'vant/lib/index.css'
+import './libs/rem'
+Vue.use(Vant)
+// -- 引入自定义图标
+import './assets/icons/iconfont.css'
 import { getRequest, postRequest } from './libs/request'
 Vue.config.productionTip = false
 Vue.prototype.getRequest = getRequest

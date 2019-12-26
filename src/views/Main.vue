@@ -1,26 +1,22 @@
 <template>
     <div>
-        <div>main容器</div>
-        <router-view/>
+        <!-- 页面全部进行缓存 -->
+        <keep-alive>
+            <router-view/>
+        </keep-alive>
+        <Tabbar></Tabbar>
     </div>
 </template>
 <script>
+import Tabbar from '@/components/Tabbar'
 export default {
     name:'Main',
+    components:{
+        Tabbar
+    },
     data(){
         return{
 
-        }
-    },
-    created(){
-        this.initData()
-    },
-    methods:{
-        initData(){
-            console.log('数据初始化')
-            this.getRequest('homeApi').then(res=>{
-                console.log('获取homeApi数据',res)
-            })
         }
     }
 }
